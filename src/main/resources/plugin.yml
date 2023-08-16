@@ -1,0 +1,10 @@
+name: GenProtect
+version: '${version}'
+main: cn.afternode.genprotect.GenProtect
+api-version: '1.18'
+load: STARTUP
+
+permissions:
+  genprotect.allow-break:
+    default: op
+    description: Bypass anti-break

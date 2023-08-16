@@ -1,0 +1,13 @@
+unaccepted-kick:
+  messages:
+    - "You are temporarily banned from this server"
+    - "Reason: %reason%"
+    - "Name: %name%"
+    - "Address: %addr%"
+
+  reasons:
+    prefix: "Illegal Name"
+    suffix: "Illegal Name"
+    contains: "Illegal Name"
+    rejoin: "Please join again"
+    error: "Authentication error, please contact the operator"

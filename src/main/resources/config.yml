@@ -1,0 +1,43 @@
+database:
+  # h2 - Local file
+  # MySQL - MySQL database
+  type: h2
+
+  # For MySQL only
+  host: "127.0.0.1"
+  port: 3306
+  user: root
+  pass: ""
+  name: GenProtect
+
+anti-bot:
+  use-prefix: false
+  name-prefix:
+    - "   "
+
+  use-suffix: false
+  name-suffix:
+    - "   "
+
+  use-contains: false
+  name-contains:
+    - "   "
+
+  rejoin-auth: true
+
+
+anti-spam:
+  enabled: true
+  # Message similarity threshold
+  threshold: 10
+  # Maximum detection times
+  vl: 5
+  # Operation after maximum detection times
+  operations:
+    - "kick %player% Stop spamming"
+
+# Cancel all BlockBreakEvent from player without permission genprotect.allow-break
+anti-break:
+  enabled: false
+  worlds:
+    - "example-world"
